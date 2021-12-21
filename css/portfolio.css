@@ -1,6 +1,12 @@
 
 .portfolio {
-    padding: 93px 0 140px;
+    padding: 93px 0 139px;
+}
+
+@media screen and (max-width: 375px) {
+    .portfolio {
+        padding: 25px 0 25px;
+    }
 }
 
 .portfolio h2 {
@@ -11,10 +17,27 @@
     font-weight: bold;
 }
 
+@media screen and (max-width: 375px) {
+    .portfolio h2 {
+        margin-bottom: 19px;
+        font-size: 2.4rem;
+        text-align: center;
+    }
+}
+
 .portfolio-wrapper {
     display: flex;
     gap: 125px;
     flex-shrink: 0;
+}
+
+@media screen and (max-width: 375px) {
+    .portfolio-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+        flex-shrink: 0;
+    }
 }
 
 .portfolio-images {
@@ -23,10 +46,23 @@
     gap: 30px;
 }
 
+@media screen and (max-width: 375px) {
+    .portfolio-images {
+        padding-top: 20px;
+        gap: 14px;
+    }
+}
+
 .portfolio-col {
     display: flex;
     flex-direction: column;
     gap: 32px;
+}
+
+@media screen and (max-width: 375px) {
+    .portfolio-col {
+        gap: 12px;
+    }
 }
 
 .portfolio-col:first-of-type {
@@ -47,12 +83,28 @@
     flex-direction: column;
 }
 
+@media screen and (max-width: 375px) {
+    .portfolio-content {
+        width: 100%;
+        text-align: center;
+    }
+}
+
 .portfolio-content h3 {
     font-size: 1.8rem;
     line-height: 1.2;
     color: #333333;
     font-weight: 600;
     margin-bottom: 48px;
+}
+
+@media screen and (max-width: 375px) {
+    .portfolio-content h3 {
+        font-size: 1.4rem;
+        line-height: 1.7;
+        margin-bottom: 15px;
+        text-align: center;
+    }
 }
 
 .portfolio-content p {
@@ -62,9 +114,22 @@
     flex-grow: 1;
 }
 
+@media screen and (max-width: 375px) {
+    .portfolio-content p {
+        font-size: 1.2rem;
+        line-height: 1.25;
+    }
+}
+
 .buttons {
     display: flex;
     gap: 18px;
+}
+
+@media screen and (max-width: 375px) {
+    .buttons {
+        display: none;
+    }
 }
 
 button {

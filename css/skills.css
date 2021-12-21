@@ -57,12 +57,26 @@
     align-items: center;
 }
 
+@media screen and (max-width: 375px) {
+    .skills-row {
+        gap: 16px;
+    }
+}
+
 .skills-row-name {
     width: 130px;
     font-weight: 600;
     font-size: 1.8rem;
     line-height: 1.2;
     color: #333333;
+}
+
+@media screen and (max-width: 375px) {
+    .skills-row-name {
+        width: 85px;
+        font-size: 1.2rem;
+        line-height: 2.1;
+    }
 }
 
 .skills-row-value {
@@ -72,10 +86,25 @@
     flex-grow: 1;
 }
 
+@media screen and (max-width: 375px) {
+    .skills-row-value {
+        font-size: 1.2rem;
+        line-height: 2.1;
+    }
+}
+
 .skills-progressbar {
     height: 24px;
+    width: 550px;
     background-color: #F5D6AB;
     overflow: hidden;
+}
+
+@media screen and (max-width: 375px) {
+    .skills-progressbar {
+        height: 18px;
+        width: 211px;
+    }
 }
 
 .skills-progressbar-track {
@@ -91,12 +120,35 @@
     gap: 20px;
 }
 
+@media screen and (max-width: 375px) {
+    .skills-wrapper ul {
+        flex-grow: 1;
+        gap: 22px;
+        flex-direction: column-reverse;
+    }
+}
+
 .skills-wrapper li {
     display: flex;
     flex-direction: column;
     gap: 21px;
 }
 
+@media screen and (max-width: 375px) {
+    .skills-wrapper li {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+}
+
 .skills-wrapper li:first-of-type {
     padding-bottom: 45px;
+}
+
+@media screen and (max-width: 375px) {
+    .skills-wrapper li:first-of-type {
+        padding-bottom: 13px;
+        order: 1;
+    }
 }
