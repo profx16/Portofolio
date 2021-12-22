@@ -18,6 +18,7 @@
         <section class="hero">
             <div class="container">
                 <header>
+                    <img class="menu" src="img/NavButton.png" alt="menu">
                     <a href="#" class="logo">
                         Portofolio
                     </a>
@@ -301,10 +302,30 @@
                     </li>
                 </ul>
             </div>
+            <button onclick="topFunction()" id="top-button"><img src="img/arrow_top.svg" alt="arrow top"></button>
         </div>
     </footer>
 
     <!-- End footer -->
+<script>
+
+mybutton = document.getElementById("top-button");
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+</script>
 </body>
 
 </html>

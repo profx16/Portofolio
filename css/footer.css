@@ -1,6 +1,7 @@
 footer {
     background-color: #FFFAF2;
     padding: 93px 0 189px;
+    position: relative;
 }
 
 @media screen and (max-width: 375px) {
@@ -63,5 +64,27 @@ footer h2 {
 @media screen and (max-width: 375px) {
     .footer-wrapper a {
         font-size: 1.4rem;
+    }
+}
+
+#top-button {
+    display: none;
+    position: fixed; 
+    bottom: 70px; 
+    right: 180px; 
+    z-index: 99; 
+}
+  
+  #top-button:hover {
+    transform: scale(2);
+}
+
+  @media screen and (max-width: 375px) {
+    #top-button {
+        display: none;
+        position: fixed; 
+        bottom: 58px; 
+        right: 32px; 
+        z-index: 99; 
     }
 }

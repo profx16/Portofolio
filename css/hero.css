@@ -42,17 +42,28 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 71px;
     padding-bottom: 30px;
 }
 
 @media screen and (max-width: 375px) {
     header {
         display: flex;
-        justify-content: center;
+        justify-content:start;
         align-items: center;
         padding-bottom: 50px;
     }
 }    
+
+.menu {
+    display: none;
+}
+
+@media screen and (max-width: 375px) {
+    .menu {
+        display: unset;
+    }
+}
 
 .logo {
     font-size: 2.4rem;
