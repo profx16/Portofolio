@@ -9,7 +9,7 @@
     }
 }
 
-.skills h2 {
+.skills__title {
     margin-bottom: 86px;
     font-weight: bold;
     font-size: 2.4rem;
@@ -17,7 +17,7 @@
 }
 
 @media screen and (max-width: 375px) {
-    .skills h2 {
+    .skills__title {
         margin-bottom: 25px;
         font-weight: 600;
         font-size: 2.4rem;
@@ -26,17 +26,17 @@
     }
 }
 
-.skills-wrapper img {
+.skills__img {
     width: 350px;
 }
 
 @media screen and (max-width: 375px) {
-    .skills-wrapper img {
+    .skills__img {
         width: 224px;
     }
 }
 
-.skills-wrapper {
+.skills__wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -44,26 +44,26 @@
 }
 
 @media screen and (max-width: 375px) {
-    .skills-wrapper {
+    .skills__wrapper {
         display: flex;
         flex-direction: column;
         gap: 26px;
     }
 }    
 
-.skills-row {
+.skills-list__row {
     display: flex;
     gap: 66px;
     align-items: center;
 }
 
 @media screen and (max-width: 375px) {
-    .skills-row {
+    .skills-list__row {
         gap: 16px;
     }
 }
 
-.skills-row-name {
+.skills-row__name {
     width: 130px;
     font-weight: 600;
     font-size: 1.8rem;
@@ -72,14 +72,14 @@
 }
 
 @media screen and (max-width: 375px) {
-    .skills-row-name {
+    .skills-row__name {
         width: 85px;
         font-size: 1.2rem;
         line-height: 2.1;
     }
 }
 
-.skills-row-value {
+.skills-row__value {
     color: #333333;
     font-size: 1.8rem;
     line-height: 1.2;
@@ -87,7 +87,7 @@
 }
 
 @media screen and (max-width: 375px) {
-    .skills-row-value {
+    .skills-row__value {
         font-size: 1.2rem;
         line-height: 2.1;
     }
@@ -107,13 +107,13 @@
     }
 }
 
-.skills-progressbar-track {
+.skills-progressbar__track {
     height: 100%;
     background-color: #C66C49;
     width: 33%;
 }
 
-.skills-wrapper ul {
+.skills-list {
     flex-grow: 1;
     display: flex;
     flex-direction: column;
@@ -121,33 +121,33 @@
 }
 
 @media screen and (max-width: 375px) {
-    .skills-wrapper ul {
+    .skills-list {
         flex-grow: 1;
         gap: 22px;
         flex-direction: column-reverse;
     }
 }
 
-.skills-wrapper li {
+.skills-list__item {
     display: flex;
     flex-direction: column;
     gap: 21px;
 }
 
 @media screen and (max-width: 375px) {
-    .skills-wrapper li {
+    .skills-list__item {
         display: flex;
         flex-direction: column;
         gap: 12px;
     }
 }
 
-.skills-wrapper li:first-of-type {
+.skills-list__item:first-of-type {
     padding-bottom: 45px;
 }
 
 @media screen and (max-width: 375px) {
-    .skills-wrapper li:first-of-type {
+    .skills-list__item:first-of-type {
         padding-bottom: 13px;
         order: 1;
     }

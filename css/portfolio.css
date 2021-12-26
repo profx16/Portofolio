@@ -9,7 +9,7 @@
     }
 }
 
-.portfolio h2 {
+.portfolio_title {
     margin-bottom: 86px;
     font-size: 2.4rem;
     line-height: 1.22;
@@ -18,21 +18,21 @@
 }
 
 @media screen and (max-width: 375px) {
-    .portfolio h2 {
+    .portfolio_title {
         margin-bottom: 19px;
         font-size: 2.4rem;
         text-align: center;
     }
 }
 
-.portfolio-wrapper {
+.portfolio__wrapper {
     display: flex;
     gap: 125px;
     flex-shrink: 0;
 }
 
 @media screen and (max-width: 375px) {
-    .portfolio-wrapper {
+    .portfolio__wrapper {
         display: flex;
         flex-direction: column;
         gap: 0px;
@@ -40,57 +40,57 @@
     }
 }
 
-.portfolio-images {
+.portfolio__images {
     display: flex;
     padding-top: 65px;
     gap: 30px;
 }
 
 @media screen and (max-width: 375px) {
-    .portfolio-images {
+    .portfolio__images {
         padding-top: 20px;
         gap: 14px;
     }
 }
 
-.portfolio-col {
+.portfolio__col {
     display: flex;
     flex-direction: column;
     gap: 32px;
 }
 
 @media screen and (max-width: 375px) {
-    .portfolio-col {
+    .portfolio__col {
         gap: 12px;
     }
 }
 
-.portfolio-col:first-of-type {
+.portfolio__col:first-of-type {
     width: 350px;
 }
 
-.portfolio-col:last-of-type {
+.portfolio__col:last-of-type {
     width: 255px;
 }
 
-.portfolio-col img {
+.portfolio__col img {
     width: 100%;
 }
 
-.portfolio-content {
+.portfolio__content {
     width: 350px;
     display: flex;
     flex-direction: column;
 }
 
 @media screen and (max-width: 375px) {
-    .portfolio-content {
+    .portfolio__content {
         width: 100%;
         text-align: center;
     }
 }
 
-.portfolio-content h3 {
+.portfolio__subtitle {
     font-size: 1.8rem;
     line-height: 1.2;
     color: #333333;
@@ -99,7 +99,7 @@
 }
 
 @media screen and (max-width: 375px) {
-    .portfolio-content h3 {
+    .portfolio__subtitle {
         font-size: 1.4rem;
         line-height: 1.7;
         margin-bottom: 15px;
@@ -107,7 +107,7 @@
     }
 }
 
-.portfolio-content p {
+.portfolio__txt {
     font-size: 1.8rem;
     line-height: 1.45;
     color: #333333;
@@ -115,7 +115,7 @@
 }
 
 @media screen and (max-width: 375px) {
-    .portfolio-content p {
+    .portfolio__txt {
         font-size: 1.2rem;
         line-height: 1.25;
     }
@@ -130,10 +130,4 @@
     .buttons {
         display: none;
     }
-}
-
-button {
-    background-color: transparent;
-    border: none;
-    padding: 0;
 }

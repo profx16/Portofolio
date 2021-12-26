@@ -32,13 +32,13 @@
     }
 }
 
-.hero > div {
+.hero__content {
     flex-grow: 1;
     display: flex;
     flex-direction: column;
 }
 
-header {
+.header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -47,7 +47,7 @@ header {
 }
 
 @media screen and (max-width: 375px) {
-    header {
+    .header {
         display: flex;
         justify-content:start;
         align-items: center;
@@ -55,12 +55,12 @@ header {
     }
 }    
 
-.menu {
+.header__menu {
     display: none;
 }
 
 @media screen and (max-width: 375px) {
-    .menu {
+    .header__menu {
         display: unset;
     }
 }
@@ -71,7 +71,7 @@ header {
     font-weight: bold;
 }
 
-header nav {
+.nav__list {
     display: flex;
     align-items: center;
     gap: 60px;
@@ -79,17 +79,23 @@ header nav {
 
 
 @media screen and (max-width: 375px) {
-    header nav {
+    .nav__list {
         display: none;
     }
 }
 
-header a {
+.nav__link {
     font-size: 1.8rem;
     line-height: 1.22;
 }
 
-.hero-content {
+.hero__container {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero__content {
     flex-grow: 1;
     display: flex;
     flex-direction: column;
@@ -97,48 +103,48 @@ header a {
 }
 
 @media screen and (max-width: 375px) {
-    .hero-content {
+    .hero__content {
         flex-grow: 0;
         text-align: center;
     }
 }
 
-.hero-content h1 {
+.hero__title {
     font-size: 6.4rem;
     line-height: 1.22;
     margin-bottom: 26px;
 }
 
 @media screen and (max-width: 375px) {
-    .hero-content h1 {
+    .hero__title {
         font-size: 2rem;
         line-height: 1.21;
         margin-bottom: 13px;
     }
 }
 
-.hero-content p {
+.hero__text {
     font-size: 2.4rem;
     line-height: 1.21;
     margin-bottom: 106px;
 }
 
 @media screen and (max-width: 375px) {
-    .hero-content p {
+    .hero__text {
         font-size: 1.3rem;
         line-height: 1.21;
         margin-bottom: 41px;
     }
 }
 
-.hero-content a {
+.hero__link {
     text-decoration: underline;
     font-size: 1.8rem;
     line-height: 1.22;
 }
 
 @media screen and (max-width: 375px) {
-    .hero-content a {
+    .hero__link {
         text-decoration: underline;
         font-size: 1.3rem;
         line-height: 1.22;
